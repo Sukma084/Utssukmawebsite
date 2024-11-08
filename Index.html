@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Kita - Layanan Laundry Terpercaya</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+  
+        /* Atur tinggi peta */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+        .navbar{
+            background-color: #0f1010;
+        }
+        body {
+            padding-top: 80px;
+            background-color: #f8f9fa;
+        }
+
+       
+
+.footer {
+
+    background-color: #343a40;
+
+    color: white;
+
+    padding: 20px 0;
+
+}
+
+.footer a {
+
+    color: #ffffff;
+
+}
+
+.footer a:hover {
+
+    color: #ffc107;
+
+}
+
+</style>
+    </style>
+</head>
+<body>
+     <!-- Navbar  -->
+    <section id="navbar" class="fixed-top">
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="Gallery/logo ;aundry.avif" alt="" width="50px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="table.html">table</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Layanan.html">layanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </section>
+
+    
+
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Selamat Datang di jasa Laundry antar-jemput Enakk</h1>
+            <p>Memberikan layanan laundry terbaik untuk Anda dan keluarga.</p>
+            <a href="#contact" class="btn btn-warning btn-lg">Pesan Sekarang</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Ini cara kami bekerja</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Gallery/kiloan.png" alt="" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">pengumpulan bajuS</h5>
+                            <p class="card-text">Dengan layanan antar jemput di tempat, kami mengumpulkan pakaian kotor anda, menghitung bagian per-bagian. Dari lokasi-lokasi yang berbeda, kami kemas berdasar identitas setiap konsumen untuk kami bawa ke tempat proses cuci..</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                    
+                            <img src="Gallery/th.jpeg" alt="" height="200px">
+
+                            <h5 class="card-title">proses pencucian </h5>
+                            <p class="card-text">Proses cuci pakaian laundry secara terpisah masing-masing konsumen, proses cuci terpisah dari jenis bahan dan kategori warna. Setelah proses pengeringan, kemudian seterika dan lipat hingga proses akhir packing dan identifikasi / tagging..</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card">
+                        <img src="Gallery/pengantaran.jpg" alt="" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">pakaian siap di antar</h5>
+                            <p class="card-text"> Proses akhir mengirimkan laundry pack kepada konsumen, berdasar permintaan / request yang telah sepakati bersama. Misal, titik penjemputan awal berbeda dari titik pengantaran yang baru. Atau waktu pengantaran yang fleksibel mengikuti jadwal dari pihak konsumen..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Tentang Kami</h2>
+            <p class="text-center">Kami adalah penyedia layanan laundry yang berkomitmen untuk memberikan layanan terbaik kepada pelanggan. Dengan pengalaman bertahun-tahun, kami menjamin kepuasan Anda.</p>
+        </div>
+        <div class="container mt-5">
+            <h2>Peta Lokasi</h2>
+            <div id="map">
+                <!-- Tempelkan kode embed Google Maps di sini -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15841.640493822842!2d109.62939331851365!3d-6.960851816799984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021176895daf9%3A0x85d5e6b3d0f5a30!2sThe%20Boba%20Time%20Kedungwuni!5e0!3m2!1sid!2sid!4v1730980161525!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Hubungi Kami</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Nama" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" placeholder="Pesan Anda" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+ <!-- Tombol Kembali ke Atas -->
+    <button onclick="topFunction()" id="myBtn" class="btn btn-primary">
+        Kembali ke Atas
+    </button>
+
+    
+<!-- Footer -->
+
+
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="Gallery/logo ;aundry.avif" alt="" class="img-fluid mb-2" style="max-width: 80px;">
+                <p>jasa Laundry antar-jemput Enakk</p>
+             
+            </div>
+            <div class="col-md-4">
+                <h5>Informasi Kontak</h5>
+                <ul class="list-unstyled">
+                    <li><strong>Email:</strong> sukmafirdh02@gmail.com</li>
+                    <li><strong>Telepon:</strong> (+62)852-9962-1254</li>
+                    <li><strong>Alamat:</strong> Jl. surabayan No. 127, Pekalongan, Indonesia</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+              <h5 style="text-align: center;">Ikuti Kami di Media Sosial</h5>
+              <div class="social-icons" style="text-align: center;">
+                  <a href="https://www.facebook.com/SUKMA.UMAMIT.5" target="_blank" title="Facebook">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/skmfrdhryni?igsh=bWV3M202MWltZXFq/" target="_blank" title="Instagram">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://wa.me/085299621254" target="_blank" title="WhatsApp">
+                      <i class="fab fa-whatsapp"></i>
+                  </a>
+              </div>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+  </footer>
+
+   <!-- Script untuk Tombol Kembali ke Atas -->
+   <script>
+    // Ambil tombol
+    var mybutton = document.getElementById("myBtn");
+
+    // Ketika pengguna menggulirkan halaman ke bawah 20px dari bagian atas dokumen, tampilkan tombol
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    // Ketika tombol diklik, gulirkan halaman kembali ke atas
+    function topFunction() {
+        document.body.scrollTop = 0; // Untuk Safari
+        document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE dan Opera
+    }
+</script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
